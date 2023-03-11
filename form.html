@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <form action="mailto:akash.singh_mca22@gla.ac.in" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Registration form</legend>
+        <br> <br>
+        <fieldset>
+            <legend>Login to your Account:</legend>
+            <label>User Id: </label><input type="text" name="userid"> <br><br>
+            <label>Password: </label> <input type="password" name="password"> <br> <br>
+            <input type="image" src="login.png" alt="Login" name="loginbutton">
+        </fieldset> <br>
+        <fieldset>
+            <legend>What is your area of interest</legend>
+            <input type="checkbox" name="movies"> Movies <br>
+            <input type="checkbox" name="study"> Study <br>
+            <input type="checkbox" name="Government Job"> Government Job <br>
+            <input type="checkbox" name="Athletic Games"> Athletic Games
+        </fieldset> <br>
+        <label>Choose your Favourite Colour: </label><input type="color" name="colour">  <br> <br>
+        <label>When is your birthday: </label><input type="date" name="dob"> <br> <br>
+        <label>Enter current time and date: </label><input type="datetime-local" name="timedate"> <br> <br>
+        <label>Enter your Email address:  </label><input type="email" name="email"> <br> <br>
+        <label >Select a file: </label>
+        <input type="file" name="file"> <br> <br>
+        <!--This is hidden input box to contain security details inside value attribute-->
+        <input type="hidden" name="hidden" value="1234"> 
+        <label>Enter month and year of your birthday: </label><input type="month" name="monthyearofbirthday"> <br> <br>
+        <label>What is your age ? </label><input type="number" max="100" name="age">
+        <br> <br>
+        <label>Gender: </label> <br> <br>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Others <br> <br>
+        <label>Temperature </label><input type="range" name="temperature"> <br> <br>
+        <label>Search anything you want to search: </label><input type="search" name="search"><button> Search</button> <br> <br>
+        <label>Enter Mobile no. </label><input type="tel" pattern="[6-9]{1}[0-9]{9}" name="mobileno" required> <br> <br>
+        <label>Set time</label><input type="time" name="time"> <br> <br>
+        <label>Enter your website link  </label><input type="url" placeholder="www.sample.com" name="websitelink"> <br><br>
+        <input type="submit" name="submit"><input type="reset" name="reset">
+        </fieldset>
+    </form>
+</body>
+</html>
